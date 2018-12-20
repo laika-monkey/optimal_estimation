@@ -1,0 +1,5 @@
+Was planning on splitting up optimal estimate scripts into simulated
+and real case scenarios to reduce the amount of breaking I do, with
+a master library they both call.  However, currently using the plain
+'optimal_estimation.py' to handle the processing until there is time 
+to play cleanup.

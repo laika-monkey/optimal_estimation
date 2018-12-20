@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ROOT=/home/gregq/Code/gdas
+export LD_LIBRARY_PATH=/opt/szip/lib
+$ROOT/env/bin/python $ROOT/gdas2hdf.py "$@"
+
