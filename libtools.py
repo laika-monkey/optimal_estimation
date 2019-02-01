@@ -309,6 +309,15 @@ def dtg2epoch(dtg, full=False):
 	import numpy as np
 	fmt = '%Y%m%d%H' if not full else '%Y%m%d%H%M%S'
 
+        '''
+        Other method
+        import datetime
+        epoch = datetime.datetime(1970, 1, 1, 0, 0, 0)
+        dt = datetime.datetime.strptime(dtg, fmt_dtg)
+        return (dt-epoch).total_seconds()
+        '''
+
+
 	if not hasattr(dtg, '__iter__'):
 		dt = datetime.datetime.strptime(dtg, fmt)
 		y = dt.year 
